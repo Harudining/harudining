@@ -7,19 +7,19 @@
 
 /* ---------- Custom Properties ---------- */
 :root {
-  /* Warm / luxurious palette */
-  --color-bg:          #0f0d0b;
-  --color-bg-alt:      #1a1714;
-  --color-bg-card:     #211e19;
-  --color-surface:     #2a2520;
-  --color-gold:        #c5a664;
-  --color-gold-light:  #ddc48b;
-  --color-gold-dark:   #9e833f;
-  --color-text:        #e8e2d8;
-  --color-text-muted:  #a89e8e;
-  --color-accent:      #d4956a;
-  --color-border:      rgba(197, 166, 100, .18);
-  --color-overlay:     rgba(15, 13, 11, .72);
+  /* Light / clear palette */
+  --color-bg:          #fcfbf9;
+  --color-bg-alt:      #f5f3f0;
+  --color-bg-card:     #ffffff;
+  --color-surface:     #eae5df;
+  --color-gold:        #b38b3a;
+  --color-gold-light:  #d4af60;
+  --color-gold-dark:   #8a6b2c;
+  --color-text:        #2d2926;
+  --color-text-muted:  #6b645c;
+  --color-accent:      #b85e2b;
+  --color-border:      rgba(179, 139, 58, 0.2);
+  --color-overlay:     rgba(252, 251, 249, 0.85);
 
   /* Typography */
   --font-serif:   'Cormorant Garamond', 'Lora', 'Noto Serif JP', serif;
@@ -113,10 +113,10 @@ ul  { list-style: none; }
 }
 .site-header.scrolled,
 .site-header.scrolled-always {
-  background: rgba(15, 13, 11, .92);
+  background: rgba(252, 251, 249, .95);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 2px 24px rgba(0,0,0,.35);
+  box-shadow: 0 2px 24px rgba(0,0,0,.08);
 }
 
 .header-inner {
@@ -220,8 +220,8 @@ ul  { list-style: none; }
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(15,13,11,.35) 0%,
-    rgba(15,13,11,.6) 70%,
+    rgba(0,0,0,.4) 0%,
+    rgba(0,0,0,.5) 80%,
     var(--color-bg) 100%
   );
 }
@@ -290,8 +290,8 @@ ul  { list-style: none; }
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(15,13,11,.4) 0%,
-    rgba(15,13,11,.7) 70%,
+    rgba(0,0,0,.4) 0%,
+    rgba(0,0,0,.5) 80%,
     var(--color-bg) 100%
   );
 }
