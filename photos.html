@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photos — Haru dining | 創作鉄板料理</title>
+  <meta name="description" content="Haru dining の店舗やお料理の写真ギャラリー。創作鉄板料理の世界をご覧ください。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header scrolled-always" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Haru dining</a>
+      <nav>
+        <ul class="nav-list" id="navList">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="photos.html" class="active">PHOTOS</a></li>
+          <li><a href="access.html">ACCESS</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('restaurant.png');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>Photos</h1>
+      <p data-i18n="photos.hero.sub">— フォトギャラリー —</p>
+    </div>
+  </section>
+
+  <!-- ========== PHOTOS ========== -->
+  <section class="photos-section" id="photos">
+    <div class="container fade-in">
+      <div class="photo-gallery">
+        <div class="photo-item">
+          <img src="IMG_7099.jpg" alt="Haru dining 料理写真" class="photo-img" />
+        </div>
+        <div class="photo-item">
+          <img src="IMG_7575.jpg" alt="Haru dining 料理写真" class="photo-img" />
+        </div>
+        <div class="photo-item">
+          <img src="IMG_9456.jpg" alt="Haru dining 料理写真" class="photo-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER (店舗情報) ========== -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-info">
+        <div class="footer-brand">
+          <p class="footer-logo">Haru dining</p>
+          <p class="footer-genre" data-i18n="footer.genre">創作鉄板料理</p>
+        </div>
+        <div class="footer-details">
+          <div class="footer-detail-item">
+            <span class="footer-detail-label" data-i18n="footer.label.hours">営業時間</span>
+            <span class="footer-detail-value" data-i18n="footer.hours">11:00〜14:30 ／ 17:30〜22:00</span>
+          </div>
+          <div class="footer-detail-item">
+            <span class="footer-detail-label" data-i18n="footer.label.closed">定休日</span>
+            <span class="footer-detail-value" data-i18n="footer.closed">土曜・日曜・祝日</span>
+          </div>
+          <div class="footer-detail-item">
+            <span class="footer-detail-label" data-i18n="footer.label.tel">電話番号</span>
+            <span class="footer-detail-value"><a href="tel:0362311720">03-6231-1720</a></span>
+          </div>
+          <div class="footer-detail-item">
+            <span class="footer-detail-label" data-i18n="footer.label.ig">Instagram</span>
+            <span class="footer-detail-value"><a href="https://instagram.com/haru_dining2011?igshid=11b43vqah2bs2"
+                target="_blank" rel="noopener noreferrer">@haru_dining2011</a></span>
+          </div>
+          <div class="footer-detail-item">
+            <span class="footer-detail-label" data-i18n="footer.label.access">アクセス</span>
+            <span class="footer-detail-value" data-i18n="footer.access">東京メトロ 茅場町駅より徒歩4分</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copy">&copy; 2011&ndash;2026 Haru dining. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== FLOATING CONTACT ========== -->
+  <a href="tel:0362311720" class="floating-contact" aria-label="店舗へ電話する">
+    <span class="contact-icon">📞</span>
+    <span class="contact-text">03-6231-1720</span>
+  </a>
+
+  <!-- ========== SCRIPT ========== -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* ---------- Hamburger ---------- */
+      const hamburger = document.getElementById('hamburger');
+      const navList = document.getElementById('navList');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navList.classList.toggle('open');
+      });
+      navList.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          navList.classList.remove('open');
+        });
+      });
+
+      /* ---------- Fade-in on scroll (IntersectionObserver) ---------- */
+      const fadeEls = document.querySelectorAll('.fade-in');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      fadeEls.forEach(el => observer.observe(el));
+
+    })();
+  </script>
+  <script src="lang.js"></script>
+</body>
+
+</html>

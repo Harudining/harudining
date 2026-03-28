@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Haru dining | 創作鉄板料理</title>
+  <meta name="description" content="Haru dining のランチ・ディナーメニュー。厳選された旬の食材を使った創作鉄板料理をご紹介いたします。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header scrolled-always" id="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Haru dining</a>
+    <nav>
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="menu.html" class="active">MENU</a></li>
+        <li><a href="photos.html">PHOTOS</a></li>
+        <li><a href="access.html">ACCESS</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ========== PAGE HERO ========== -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('restaurant.png');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <h1>Menu</h1>
+    <p data-i18n="menu.hero.sub">— お品書き —</p>
+  </div>
+</section>
+
+<!-- ========== MENU ========== -->
+<section class="menu" id="menu">
+  <div class="container fade-in">
+    <div class="menu-tabs">
+      <button class="menu-tab active" data-tab="lunch" data-i18n="menu.tab.lunch">LUNCH</button>
+      <button class="menu-tab" data-tab="dinner" data-i18n="menu.tab.dinner">DINNER</button>
+      <button class="menu-tab" data-tab="takeout" data-i18n="menu.tab.takeout">TAKE OUT</button>
+    </div>
+
+    <!-- Lunch -->
+    <div class="menu-list active menu-grid" id="lunch">
+      <div class="menu-card">
+        <p class="menu-card-name" data-i18n="menu.l1.name">日替わり鉄板ランチ</p>
+        <div class="menu-card-img"><span>No Image</span></div>
+        <p class="menu-card-desc" data-i18n="menu.l1.desc">その日仕入れた旬の食材を使用した日替わりの鉄板焼きプレート。サラダ・スープ・ライス付き。</p>
+        <p class="menu-card-price">&yen;1,200</p>
+      </div>
+      <div class="menu-card">
+        <p class="menu-card-name" data-i18n="menu.l2.name">黒毛和牛ハンバーグセット</p>
+        <div class="menu-card-img"><span>No Image</span></div>
+        <p class="menu-card-desc" data-i18n="menu.l2.desc">A5ランクの黒毛和牛を贅沢に使用した、ジューシーなハンバーグ。特製デミグラスソースで。</p>
+        <p class="menu-card-price">&yen;1,500</p>
+      </div>
+      <div class="menu-card">
+        <p class="menu-card-name" data-i18n="menu.l3.name">海鮮鉄板焼き御膳</p>
+        <div class="menu-card-img"><span>No Image</span></div>
+        <p class="menu-card-desc" data-i18n="menu.l3.desc">帆立・海老・旬の魚介を鉄板で香ばしく焼き上げた御膳。レモンバターソースでお召し上がりください。</p>
+        <p class="menu-card-price">&yen;1,800</p>
+      </div>
+      <div class="menu-card">
+        <p class="menu-card-name" data-i18n="menu.l4.name">季節の野菜たっぷり鉄板パスタ</p>
+        <div class="menu-card-img"><span>No Image</span></div>
+        <p class="menu-card-desc" data-i18n="menu.l4.desc">鉄板で炒めた彩り豊かな季節野菜のパスタ。ガーリックオイルの香りが食欲をそそります。</p>
+        <p class="menu-card-price">&yen;1,100</p>
+      </div>
+    </div>
+
+    <!-- Dinner -->
+    <div class="menu-list menu-grid" id="dinner">
+      <div class="menu-card">
+        <p class="menu-card-name" data-i18n="menu.d1.name">おまかせコース "Haru"</p>
+        <div class="menu-card-img"><span>No Image</span></div>
+        <p class="menu-card-desc" data-i18n="menu.d1.desc">前菜からデザートまで全8品。その日最も旬な食材をシェフのおまかせでお届けします。</p>
+        <p class="menu-card-price">¥8,800</p>
+      </div>
+      <div class="menu-card">
+        <p class="menu-card-name" data-i18n="menu.d2.name">黒毛和牛サーロインステーキ</p>
+        <div class="menu-card-img"><span>No Image</span></div>
+        <p class="menu-card-desc" data-i18n="menu.d2.desc">厳選されたA5ランクの黒毛和牛サーロインを、絶妙な火加減で焼き上げる看板メニュー。</p>
+        <p class="menu-card-price">¥6,600</p>
+      </div>
+      <div class="menu-card">
+        <p class="menu-card-name" data-i18n="menu.d3.name">活オマール海老の鉄板焼き</p>
+        <div class="menu-card-img"><span>No Image</span></div>
+        <p class="menu-card-desc" data-i18n="menu.d3.desc">生きたオマール海老を目の前で調理。プリプリの身を特製ソースとともに。</p>
+        <p class="menu-card-price">¥5,500</p>
+      </div>
+      <div class="menu-card">
+        <p class="menu-card-name" data-i18n="menu.d4.name">フォアグラと季節フルーツ</p>
+        <div class="menu-card-img"><span>No Image</span></div>
+        <p class="menu-card-desc" data-i18n="menu.d4.desc">鉄板で焼き上げたフォアグラに、季節のフルーツソースを合わせた贅沢な一皿。</p>
+        <p class="menu-card-price">¥3,300</p>
+      </div>
+      <div class="menu-card">
+        <p class="menu-card-name" data-i18n="menu.d5.name">本日の鮮魚カルパッチョ</p>
+        <div class="menu-card-img"><span>No Image</span></div>
+        <p class="menu-card-desc" data-i18n="menu.d5.desc">築地直送の新鮮な魚介を使用した一品。柑橘のヴィネグレットでさっぱりと。</p>
+        <p class="menu-card-price">¥2,200</p>
+      </div>
+      <div class="menu-card">
+        <p class="menu-card-name" data-i18n="menu.d6.name">鉄板焼きそば "Haru style"</p>
+        <div class="menu-card-img"><span>No Image</span></div>
+        <p class="menu-card-desc" data-i18n="menu.d6.desc">海鮮と野菜をたっぷり使った当店オリジナルの焼きそば。〆の一品として人気です。</p>
+        <p class="menu-card-price">¥1,650</p>
+      </div>
+    </div>
+
+    <!-- Take Out -->
+    <div class="menu-list menu-grid" id="takeout">
+      <div class="menu-card">
+        <p class="menu-card-name" data-i18n="menu.t1.name">テイクアウト弁当 〜鉄板日替わり〜</p>
+        <div class="menu-card-img"><span>No Image</span></div>
+        <p class="menu-card-desc" data-i18n="menu.t1.desc">その日の旬の食材を使った鉄板焼きをお弁当でどうぞ。ご飯付き。</p>
+        <p class="menu-card-price">&yen;1,000</p>
+      </div>
+      <div class="menu-card">
+        <p class="menu-card-name" data-i18n="menu.t2.name">黒毛和牛ハンバーグ弁当</p>
+        <div class="menu-card-img"><span>No Image</span></div>
+        <p class="menu-card-desc" data-i18n="menu.t2.desc">A5ランク黒毛和牛のジューシーなハンバーグ。特製デミグラスソース付き。</p>
+        <p class="menu-card-price">&yen;1,300</p>
+      </div>
+      <div class="menu-card">
+        <p class="menu-card-name" data-i18n="menu.t3.name">海鮮鉄板焼き弁当</p>
+        <div class="menu-card-img"><span>No Image</span></div>
+        <p class="menu-card-desc" data-i18n="menu.t3.desc">帆立・海老・旬の魚介を鉄板で香ばしく焼き上げたお弁当。レモンバターソース付き。</p>
+        <p class="menu-card-price">&yen;1,500</p>
+      </div>
+      <div class="menu-card">
+        <p class="menu-card-name" data-i18n="menu.t4.name">鉄板焼きそば弁当</p>
+        <div class="menu-card-img"><span>No Image</span></div>
+        <p class="menu-card-desc" data-i18n="menu.t4.desc">海鮮と野菜をたっぷり使った当店オリジナルの焼きそばをお持ち帰りで。</p>
+        <p class="menu-card-price">&yen;900</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER (店舗情報) ========== -->
+<footer class="site-footer" id="footer">
+  <div class="container">
+    <div class="footer-info">
+      <div class="footer-brand">
+        <p class="footer-logo">Haru dining</p>
+        <p class="footer-genre" data-i18n="footer.genre">創作鉄板料理</p>
+      </div>
+      <div class="footer-details">
+        <div class="footer-detail-item">
+          <span class="footer-detail-label" data-i18n="footer.label.hours">営業時間</span>
+          <span class="footer-detail-value" data-i18n="footer.hours">11:00〜14:30 ／ 17:30〜22:00</span>
+        </div>
+        <div class="footer-detail-item">
+          <span class="footer-detail-label" data-i18n="footer.label.closed">定休日</span>
+          <span class="footer-detail-value" data-i18n="footer.closed">土曜・日曜・祝日</span>
+        </div>
+        <div class="footer-detail-item">
+          <span class="footer-detail-label" data-i18n="footer.label.tel">電話番号</span>
+          <span class="footer-detail-value"><a href="tel:0362311720">03-6231-1720</a></span>
+        </div>
+        <div class="footer-detail-item">
+          <span class="footer-detail-label" data-i18n="footer.label.ig">Instagram</span>
+          <span class="footer-detail-value"><a href="https://instagram.com/haru_dining2011?igshid=11b43vqah2bs2" target="_blank" rel="noopener noreferrer">@haru_dining2011</a></span>
+        </div>
+        <div class="footer-detail-item">
+          <span class="footer-detail-label" data-i18n="footer.label.access">アクセス</span>
+          <span class="footer-detail-value" data-i18n="footer.access">東京メトロ 茅場町駅より徒歩4分</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copy">&copy; 2011&ndash;2026 Haru dining. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== FLOATING CONTACT ========== -->
+<a href="tel:0362311720" class="floating-contact" aria-label="店舗へ電話する">
+  <span class="contact-icon">📞</span>
+  <span class="contact-text">03-6231-1720</span>
+</a>
+
+<!-- ========== SCRIPT ========== -->
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- Hamburger ---------- */
+  const hamburger = document.getElementById('hamburger');
+  const navList   = document.getElementById('navList');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navList.classList.toggle('open');
+  });
+  navList.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navList.classList.remove('open');
+    });
+  });
+
+  /* ---------- Menu tabs ---------- */
+  const tabs  = document.querySelectorAll('.menu-tab');
+  const lists = document.querySelectorAll('.menu-list');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      lists.forEach(l => l.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById(tab.dataset.tab).classList.add('active');
+    });
+  });
+
+  /* ---------- Fade-in on scroll (IntersectionObserver) ---------- */
+  const fadeEls = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  fadeEls.forEach(el => observer.observe(el));
+
+})();
+</script>
+  <script src="lang.js"></script>
+</body>
+</html>

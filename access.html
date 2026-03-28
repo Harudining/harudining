@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Access — Haru dining | 創作鉄板料理</title>
+  <meta name="description" content="Haru dining へのアクセス情報。茅場町駅より徒歩4分。営業時間・定休日・地図をご確認いただけます。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header scrolled-always" id="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Haru dining</a>
+    <nav>
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="photos.html">PHOTOS</a></li>
+        <li><a href="access.html" class="active">ACCESS</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ========== PAGE HERO ========== -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('restaurant.png');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <h1>Access</h1>
+    <p data-i18n="access.hero.sub">— 店舗情報・アクセス —</p>
+  </div>
+</section>
+
+<!-- ========== ACCESS / INFO ========== -->
+<section class="info" id="info">
+  <div class="container fade-in">
+    <div class="info-grid">
+      <!-- 左カラム: 店舗情報 -->
+      <div>
+        <table class="info-table">
+          <tr>
+            <th data-i18n="access.th.name">店舗名</th>
+            <td>Haru dining</td>
+          </tr>
+          <tr>
+            <th data-i18n="access.th.genre">ジャンル</th>
+            <td data-i18n="access.td.genre">創作鉄板料理</td>
+          </tr>
+          <tr>
+            <th data-i18n="access.th.founded">創業</th>
+            <td data-i18n="access.td.founded">2011年〜</td>
+          </tr>
+          <tr>
+            <th data-i18n="access.th.hours">営業時間</th>
+            <td>
+              <span data-i18n="access.td.hours">11:00〜14:30 ／ 17:30〜22:00</span>
+              <small>L.O. 21:00</small>
+            </td>
+          </tr>
+          <tr>
+            <th data-i18n="access.th.closed">定休日</th>
+            <td data-i18n="access.td.closed">土曜・日曜・祝日</td>
+          </tr>
+          <tr>
+            <th data-i18n="access.th.tel">電話番号</th>
+            <td><a href="tel:0362311720" style="color:var(--color-gold-light);">03-6231-1720</a></td>
+          </tr>
+          <tr>
+            <th data-i18n="access.th.ig">Instagram</th>
+            <td><a href="https://instagram.com/haru_dining2011?igshid=11b43vqah2bs2" target="_blank" rel="noopener noreferrer" style="color:var(--color-gold-light);">@haru_dining2011</a></td>
+          </tr>
+        </table>
+
+        <ul class="access-list">
+          <li data-i18n="access.li1">東京メトロ 茅場町駅より徒歩4分</li>
+          <li data-i18n="access.li2">東京メトロ・JR 八丁堀駅より徒歩10分</li>
+          <li data-i18n="access.li3">都営地下鉄 日本橋駅より徒歩4分</li>
+          <li data-i18n="access.li4">東京メトロ 日本橋駅より徒歩6分</li>
+        </ul>
+      </div>
+
+      <!-- 右カラム: マップ -->
+      <div class="map-placeholder">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0!2d139.7813!3d35.6795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188959baa77f45%3A0x608a00f788bd6f8!2zSMOgcnUgRGluaW5n!5e0!3m2!1sja!2sjp!4v1700000000000"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Haru dining 所在地">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== FOOTER (店舗情報) ========== -->
+<footer class="site-footer" id="footer">
+  <div class="container">
+    <div class="footer-info">
+      <div class="footer-brand">
+        <p class="footer-logo">Haru dining</p>
+        <p class="footer-genre" data-i18n="footer.genre">創作鉄板料理</p>
+      </div>
+      <div class="footer-details">
+        <div class="footer-detail-item">
+          <span class="footer-detail-label" data-i18n="footer.label.hours">営業時間</span>
+          <span class="footer-detail-value" data-i18n="footer.hours">11:00〜14:30 ／ 17:30〜22:00</span>
+        </div>
+        <div class="footer-detail-item">
+          <span class="footer-detail-label" data-i18n="footer.label.closed">定休日</span>
+          <span class="footer-detail-value" data-i18n="footer.closed">土曜・日曜・祝日</span>
+        </div>
+        <div class="footer-detail-item">
+          <span class="footer-detail-label" data-i18n="footer.label.tel">電話番号</span>
+          <span class="footer-detail-value"><a href="tel:0362311720">03-6231-1720</a></span>
+        </div>
+        <div class="footer-detail-item">
+          <span class="footer-detail-label" data-i18n="footer.label.ig">Instagram</span>
+          <span class="footer-detail-value"><a href="https://instagram.com/haru_dining2011?igshid=11b43vqah2bs2" target="_blank" rel="noopener noreferrer">@haru_dining2011</a></span>
+        </div>
+        <div class="footer-detail-item">
+          <span class="footer-detail-label" data-i18n="footer.label.access">アクセス</span>
+          <span class="footer-detail-value" data-i18n="footer.access">東京メトロ 茅場町駅より徒歩4分</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+        <p data-i18n="footer.copy">&copy; 2011&ndash;2026 Haru dining. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== FLOATING CONTACT ========== -->
+<a href="tel:0362311720" class="floating-contact" aria-label="店舗へ電話する">
+  <span class="contact-icon">📞</span>
+  <span class="contact-text">03-6231-1720</span>
+</a>
+
+<!-- ========== SCRIPT ========== -->
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- Hamburger ---------- */
+  const hamburger = document.getElementById('hamburger');
+  const navList   = document.getElementById('navList');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navList.classList.toggle('open');
+  });
+  navList.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navList.classList.remove('open');
+    });
+  });
+
+  /* ---------- Fade-in on scroll (IntersectionObserver) ---------- */
+  const fadeEls = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  fadeEls.forEach(el => observer.observe(el));
+
+
+
+})();
+</script>
+<script src="lang.js"></script>
+</body>
+</html>

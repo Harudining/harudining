@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haru dining — 創作鉄板料理 | 茅場町</title>
+  <meta name="description" content="Haru dining は2011年創業、茅場町にある創作鉄板料理の店です。厳選素材を目の前の鉄板で仕上げる、五感で愉しむお料理をご提供いたします。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header scrolled-always" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Haru dining</a>
+      <nav>
+        <ul class="nav-list" id="navList">
+          <li><a href="index.html" class="active">HOME</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="photos.html">PHOTOS</a></li>
+          <li><a href="access.html">ACCESS</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline" data-i18n="hero.tagline">Creative Teppanyaki since 2011</p>
+      <h1 class="hero-title" data-i18n="hero.title">Haru dining</h1>
+      <p class="hero-sub" data-i18n-html="hero.sub">
+        厳選された旬の食材を、目の前の鉄板で丁寧に仕上げる。<br />
+        五感で愉しむ、ここだけの創作鉄板料理。
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== CONCEPT ========== -->
+  <section class="concept" id="concept">
+    <div class="container fade-in">
+      <span class="gold-line"></span>
+      <h2 class="section-label" data-i18n="concept.label">Concept</h2>
+      <p class="section-sub" data-i18n="concept.sub">— こだわり —</p>
+
+      <div class="concept-body">
+        <p data-i18n="concept.p1">
+          2011年の創業以来、Haru dining は「鉄板で旬を届ける」という想いのもと、
+          素材選びから調理法、盛り付けに至るまで一切の妥協を排してまいりました。
+          毎朝市場へ足を運び、その日最も状態の良い食材だけを厳選。
+          お客様の目の前で繰り広げるライブ調理は、味覚だけでなく視覚・聴覚・嗅覚すべてを刺激します。
+        </p>
+        <p data-i18n="concept.p2">
+          和の繊細さと洋の大胆さを融合した "創作鉄板料理" は、
+          伝統的な鉄板焼きの概念を超え、新しい食の体験を提供します。
+          お一人おひとりのペースに合わせたコース仕立てで、
+          大切な方とのお食事から、気軽なランチタイムまで幅広いシーンでお愉しみいただけます。
+        </p>
+
+        <div class="concept-quote">
+          <p data-i18n-html="concept.quote">
+            「美味しいは当たり前。そこに"驚き"と"温もり"を添えて、<br />
+            お客様の日常に小さな幸せをお届けしたい。」
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CHEF ========== -->
+  <section class="chef" id="chef">
+    <div class="container fade-in">
+      <span class="gold-line"></span>
+      <h2 class="section-label" data-i18n="chef.label">Chef</h2>
+      <p class="section-sub" data-i18n="chef.sub">— シェフ紹介 —</p>
+
+      <div class="chef-grid">
+        <div class="chef-img-wrapper">
+          <img src="papa.png" alt="Haru dining シェフ" />
+        </div>
+        <div class="chef-text">
+          <h3 data-i18n="chef.name">坊坂 康治</h3>
+          <p class="chef-role" data-i18n="chef.role">オーナーシェフ ／ Haru dining 創業者</p>
+          <p data-i18n="chef.p1">
+            都内の名店で10年以上研鑽を積んだのち、2011年に独立。
+            フレンチの技法をベースに、和食の繊細な味覚を取り入れた独自の鉄板料理スタイルを確立しました。
+          </p>
+          <p data-i18n="chef.p2">
+            「食材との対話」を大切にし、仕入れから仕込み、調理のすべてを一人で担当。
+            お客様一人ひとりの好みやアレルギーにも細やかに対応し、
+            毎回新しい感動をお届けすることを信条としています。
+          </p>
+          <p data-i18n="chef.p3">
+            鉄板の前に立つときの真剣な眼差しと、お客様と交わす温かな笑顔。
+            そのコントラストこそが Haru dining の魅力です。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CALENDAR ========== -->
+  <section class="calendar-section" id="calendar">
+    <div class="container fade-in">
+      <span class="gold-line"></span>
+      <h2 class="section-label" data-i18n="cal.label">Calendar</h2>
+      <p class="section-sub" data-i18n="cal.sub">— 営業カレンダー —</p>
+
+      <div class="calendar-wrapper">
+        <div class="calendar-header">
+          <h3 id="calendarTitle"></h3>
+          <div class="calendar-nav">
+            <button id="calPrev" aria-label="前の月">‹</button>
+            <button id="calNext" aria-label="次の月">›</button>
+          </div>
+        </div>
+        <table class="calendar-table">
+          <thead>
+            <tr>
+              <th>日</th>
+              <th>月</th>
+              <th>火</th>
+              <th>水</th>
+              <th>木</th>
+              <th>金</th>
+              <th>土</th>
+            </tr>
+          </thead>
+          <tbody id="calendarBody"></tbody>
+        </table>
+        <div class="calendar-legend">
+          <span><span class="legend-dot today-dot"></span> <span data-i18n="cal.legend.today">本日</span></span>
+          <span><span class="legend-dot holiday-dot"></span> <span data-i18n="cal.legend.holiday">定休日（土日・祝日）</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWS / お知らせ ========== -->
+  <section class="news" id="news">
+    <div class="container fade-in">
+      <span class="gold-line"></span>
+      <h2 class="section-label" data-i18n="news.label">News</h2>
+      <p class="section-sub" data-i18n="news.sub">— お知らせ —</p>
+
+      <div class="news-list">
+        <div class="news-empty">
+          <p data-i18n="news.empty">新しいお知らせはここに表示されます。</p>
+        </div>
+        <!-- お知らせがある場合は以下のように追加:
+      <div class="news-item">
+        <time class="news-date">2026.03.20</time>
+        <p class="news-text">お知らせの内容がここに入ります。</p>
+      </div>
+      -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER (店舗情報) ========== -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-info">
+        <div class="footer-brand">
+          <p class="footer-logo">Haru dining</p>
+          <p class="footer-genre" data-i18n="footer.genre">創作鉄板料理</p>
+        </div>
+        <div class="footer-details">
+          <div class="footer-detail-item">
+            <span class="footer-detail-label" data-i18n="footer.label.hours">営業時間</span>
+            <span class="footer-detail-value" data-i18n="footer.hours">11:00〜14:30 ／ 17:30〜22:00</span>
+          </div>
+          <div class="footer-detail-item">
+            <span class="footer-detail-label" data-i18n="footer.label.closed">定休日</span>
+            <span class="footer-detail-value" data-i18n="footer.closed">土曜・日曜・祝日</span>
+          </div>
+          <div class="footer-detail-item">
+            <span class="footer-detail-label" data-i18n="footer.label.tel">電話番号</span>
+            <span class="footer-detail-value"><a href="tel:0362311720">03-6231-1720</a></span>
+          </div>
+          <div class="footer-detail-item">
+            <span class="footer-detail-label" data-i18n="footer.label.ig">Instagram</span>
+            <span class="footer-detail-value"><a href="https://instagram.com/haru_dining2011?igshid=11b43vqah2bs2"
+                target="_blank" rel="noopener noreferrer">@haru_dining2011</a></span>
+          </div>
+          <div class="footer-detail-item">
+            <span class="footer-detail-label" data-i18n="footer.label.access">アクセス</span>
+            <span class="footer-detail-value" data-i18n="footer.access">東京メトロ 茅場町駅より徒歩4分</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copy">&copy; 2011&ndash;2026 Haru dining. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== FLOATING CONTACT ========== -->
+  <a href="tel:0362311720" class="floating-contact" aria-label="店舗へ電話する">
+    <span class="contact-icon">📞</span>
+    <span class="contact-text">03-6231-1720</span>
+  </a>
+
+  <!-- ========== SCRIPT ========== -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* ---------- Header scroll ---------- */
+      const header = document.getElementById('header');
+      const hasHero = document.querySelector('.hero');
+      if (hasHero) {
+        header.classList.remove('scrolled-always');
+        window.addEventListener('scroll', () => {
+          header.classList.toggle('scrolled', window.scrollY > 60);
+        });
+      }
+
+      /* ---------- Hamburger ---------- */
+      const hamburger = document.getElementById('hamburger');
+      const navList = document.getElementById('navList');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navList.classList.toggle('open');
+      });
+      navList.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          navList.classList.remove('open');
+        });
+      });
+
+      /* ---------- Fade-in on scroll (IntersectionObserver) ---------- */
+      const fadeEls = document.querySelectorAll('.fade-in');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      fadeEls.forEach(el => observer.observe(el));
+
+      /* ---------- Calendar ---------- */
+      const holidays2026 = [
+        [0, 1], [0, 12],
+        [1, 11], [1, 23],
+        [2, 20],
+        [3, 29],
+        [4, 3], [4, 4], [4, 5], [4, 6],
+        [6, 20],
+        [7, 11],
+        [8, 21], [8, 22], [8, 23],
+        [9, 12],
+        [10, 3], [10, 23],
+      ];
+
+      function isHoliday(year, month, day) {
+        if (year !== 2026) return false;
+        return holidays2026.some(h => h[0] === month && h[1] === day);
+      }
+
+      let calYear = new Date().getFullYear();
+      let calMonth = new Date().getMonth();
+
+      function renderCalendar(year, month) {
+        const title = document.getElementById('calendarTitle');
+        const body = document.getElementById('calendarBody');
+        title.textContent = `${year}年 ${month + 1}月`;
+
+        const firstDay = new Date(year, month, 1).getDay();
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+        const today = new Date();
+
+        let html = '';
+        let day = 1;
+        for (let row = 0; row < 6; row++) {
+          if (day > daysInMonth) break;
+          html += '<tr>';
+          for (let col = 0; col < 7; col++) {
+            if (row === 0 && col < firstDay || day > daysInMonth) {
+              html += '<td class="empty"></td>';
+            } else {
+              const classes = [];
+              const dayOfWeek = new Date(year, month, day).getDay();
+              const isSunday = dayOfWeek === 0;
+              const isSaturday = dayOfWeek === 6;
+              const isHol = isHoliday(year, month, day);
+
+              if (isSunday) classes.push('sunday');
+              if (isSaturday) classes.push('saturday');
+              if (isSaturday || isSunday || isHol) classes.push('holiday');
+              if (year === today.getFullYear() &&
+                month === today.getMonth() &&
+                day === today.getDate()) {
+                classes.push('today');
+              }
+              html += `<td class="${classes.join(' ')}">${day}</td>`;
+              day++;
+            }
+          }
+          html += '</tr>';
+        }
+        body.innerHTML = html;
+      }
+
+      document.getElementById('calPrev').addEventListener('click', () => {
+        calMonth--;
+        if (calMonth < 0) { calMonth = 11; calYear--; }
+        renderCalendar(calYear, calMonth);
+      });
+      document.getElementById('calNext').addEventListener('click', () => {
+        calMonth++;
+        if (calMonth > 11) { calMonth = 0; calYear++; }
+        renderCalendar(calYear, calMonth);
+      });
+
+      renderCalendar(calYear, calMonth);
+
+    })();
+  </script>
+  <script src="lang.js"></script>
+</body>
+
+</html>

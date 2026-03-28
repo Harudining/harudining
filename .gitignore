@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Large image files (upload these separately if needed)
+*.jpg
+*.jpeg
+*.png
